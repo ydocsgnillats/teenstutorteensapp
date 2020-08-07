@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "TeensTutorTeens",
-    "slug": "snack-f541519b-4c3f-4eb8-9ede-27435faae2e5",
+    "name": "tttapp-v1.4",
+    "slug": "snack-433cce82-c3e7-478b-9b9b-8b6ca2bd5362",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -20,8 +20,8 @@
       "supportsTablet": true
     },
     "web": {
-      "favicon": "./assets/icon.png"
+      "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "description": "The iOS App for 'Teens Tutor Teens', a 501(c)(3) charity connecting students with tutors."
   }
 }
