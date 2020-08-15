@@ -2,9 +2,11 @@ import * as React from 'react';
 import { Button, View, Text, Image, StyleSheet, ImageBackground, Linking, TouchableOpacity, TextInput } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { InputFind, InputApply } from './components/Input.js';
+import Ads from './components/Ads.js';
 import Topimg from './components/Top.js';
 import { styles } from './assets/styles';
+import { ApplyForm } from './components/Apply.js';
+import { FindForm } from './components/Find.js';
 
 const backgroundImg = {uri: './assets/about.png'}
 
@@ -28,9 +30,9 @@ function HomeScreen({ navigation }) {
             </View>
            <View style = {styles.home}>
                 <TouchableOpacity
-                   style={styles.button}
+                   style={styles.bigbutton}
                    onPress={() => navigation.navigate('Find a Tutor')}>
-                   <Text style={styles.buttonText}> Find a Tutor </Text>
+                   <Text style={styles.bigbuttontext}> Find a Tutor </Text>
                 </TouchableOpacity>
             </View>
            <View style = {styles.home}>
@@ -45,6 +47,9 @@ function HomeScreen({ navigation }) {
                    <Text style={styles.buttonText}> Sponsors </Text>
                 </TouchableOpacity>
             </View>
+                <View style={styles.ads}>
+                    < Ads />
+           </View>
         </View>
            );
 }
@@ -65,7 +70,7 @@ function ApplyScreen() {
             < Topimg />
            </View>
            <View style={styles.apply}>
-            <InputApply />
+            < ApplyForm />
            </View>
            </View>
            );
@@ -78,7 +83,7 @@ function FindScreen() {
             < Topimg />
            </View>
            <View style={styles.find}>
-            <InputFind />
+            < FindForm />
            </View>
            </View>
            );
@@ -92,24 +97,22 @@ function SocialScreen() {
            </View>
            <View style = {styles.social}>
                 <TouchableOpacity
-                    style={styles.button}
+                    style={styles.socialButton}
                     onPress={() => Linking.openURL('https://www.facebook.com/Teenstutorteens-113871120346929')}>
                     <Text style={styles.buttonText}> Facebook </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={styles.button}
+                    style={styles.socialButton}
                     onPress={() => Linking.openURL('https://www.instagram.com/teenstutorteens/')}>
                     <Text style={styles.buttonText}> Instagram </Text>
                 </TouchableOpacity>
-            </View>
-           <View style = {styles.social}>
                 <TouchableOpacity
-                    style={styles.button}
+                    style={styles.socialButton}
                     onPress={() => Linking.openURL('https://twitter.com/explore')}>
                     <Text style={styles.buttonText}> Twitter </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={styles.button}
+                    style={styles.socialButton}
                     onPress={() =>
                         Linking.openURL('https://www.linkedin.com/company/teens-tutor-teens/')}>
                     <Text style={styles.buttonText}> Linkedin </Text>
