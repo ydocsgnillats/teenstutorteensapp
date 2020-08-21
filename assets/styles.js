@@ -22,58 +22,71 @@ const styles = StyleSheet.create({
         backgroundColor: '#5c79fe99',
         width: '85%',
         height: '85%',
-        top: -15,
+        top: -25,
         justifyContent: 'center',
-        borderRadius: 6,
-        borderWidth: 2,
-        borderColor:'#5c79fe75'
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor:'blue'
     },
     bigbuttontext: {
         textAlign: 'center',
         fontSize: 35,
-        color: '#1e233b',
-        fontFamily: 'AmericanTypewriter'
+        color: '#1e233b'
     },
     button: {
+        top: 10,
         margin: 10,
+        marginBottom: 0,
+        marginTop: 0,
         backgroundColor: '#5c79fe99',
         width: '40%',
         height: '50%',
         justifyContent: 'center',
-        borderRadius: 6,
-        borderWidth: 2,
-        borderColor:'#5c79fe50'
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor:'blue'
+    },
+    button2: {
+        bottom: 10,
+        margin: 10,
+        marginBottom: 0,
+        marginTop: 0,
+        backgroundColor: '#5c79fe99',
+        width: '40%',
+        height: '50%',
+        justifyContent: 'center',
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor:'blue'
     },
     socialButton:{
         margin: 10,
         justifyContent: 'center',
         height: '15%',
-        top: -20,
-        borderRadius: 6,
+        top: -30,
         borderWidth: 2,
         backgroundColor: '#5c79fe99',
-        borderRadius: 6,
-        borderWidth: 2,
-        borderColor:'#5c79fe75'
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor:'blue'
     },
     buttonText: {
         textAlign: 'center',
-        fontSize: 19,
+        fontSize: 20,
         padding: 5,
-        color: '#1e233b',
-        fontFamily: 'AmericanTypewriter'
+        color: '#1e233b'
     },
     inputStyle: {
         top:-15,
-        borderColor: '#5c79fe',
-        borderWidth: 2,
+        borderColor: 'blue',
+        borderWidth: 1,
         margin:10,
         padding:10,
         fontSize: 20
     },
     inputStyleFind: {
-        borderColor: '#5c79fe',
-        borderWidth: 2,
+        borderColor: 'blue',
+        borderWidth: 1,
         margin:2,
         padding:5,
         width: '80%',
@@ -86,11 +99,10 @@ const styles = StyleSheet.create({
     submitStyle: {
         width: '50%',
         height: '10%',
-        backgroundColor: 'grey',
         backgroundColor: '#5c79fe99',
-        borderRadius: 6,
-        borderWidth: 2,
-        borderColor:'#5c79fe75',
+        borderRadius: 4,
+        borderWidth: 1,
+        borderColor:'blue',
         justifyContent:'center',
         alignItems: 'center',
         left: 85,
@@ -101,6 +113,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flex: 2,
         flexDirection: 'row'
+    },
+    ads: {
+        top:1,
+        bottom:0
     },
     about: {
         justifyContent: 'center',
@@ -117,10 +133,16 @@ const styles = StyleSheet.create({
         top: 30,
         padding: 10
     },
-    sponsors: {
+    sponsor: {
         justifyContent: 'center',
         top: 30,
         padding: 25
+    },
+    sponsorImg: {
+        
+    },
+    sponsorText: {
+        
     },
     find: {
         backgroundColor: 'white'
