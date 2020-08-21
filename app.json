@@ -1,8 +1,11 @@
 {
   "expo": {
-    "name": "tttapp-v2.1",
+    "name": "tttapp-v3.0",
     "slug": "snack-433cce82-c3e7-478b-9b9b-8b6ca2bd5362",
     "version": "1.0.0",
+    "ios": {
+      "supportsTablet": true
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -16,9 +19,6 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
     "web": {
       "favicon": "./assets/favicon.png"
     },

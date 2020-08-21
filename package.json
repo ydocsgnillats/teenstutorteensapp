@@ -24,6 +24,7 @@
     "react-dom": "~16.11.0",
     "react-hook-form": "^6.3.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
+    "react-native-admob": "^2.0.0-beta.6",
     "react-native-email": "^1.1.0",
     "react-native-form-validator": "^0.3.2",
     "react-native-gesture-handler": "^1.7.0",
@@ -38,7 +39,8 @@
     "redux-form": "^8.3.6",
     "rn-nodeify": "^10.2.0",
     "tcomb-form-native": "^0.6.20",
-    "yarn": "^1.22.4"
+    "yarn": "^1.22.4",
+    "expo-ads-admob": "~8.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
