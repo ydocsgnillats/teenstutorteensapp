@@ -36,16 +36,16 @@ export default class ApplyForm extends ValidationComponent {
             }))
             {
             var url = 'https://teens-tutor-teens.herokuapp.com/'
-            const data = JSON.stringify({
+            const data = {
                 "first": this.state.first,
                 "last": this.state.last,
                 "email": this.state.email,
                 "where": this.state.where,
                 "anything": this.state.anything
-            })
+            }
             fetch(url, {
                 method: 'POST',
-                body: data,
+                body: JSON.stringify(data),
                 headers: {
                     'Content-Type': 'Application/json'
                 }
