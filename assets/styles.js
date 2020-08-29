@@ -135,14 +135,23 @@ const styles = StyleSheet.create({
     },
     sponsor: {
         justifyContent: 'center',
-        top: 30,
-        padding: 25
+        top: 10,
+        flexDirection: 'row',
     },
     sponsorImg: {
-        
+        flexDirection: 'row',
+        flex: 1,
+        resizeMode: 'contain',
+        width: 100,
+        height: 100,
     },
     sponsorText: {
-        
+        flexDirection: 'row',
+        top: 35,
+        left: -4,
+        color: 'grey',
+        fontSize:12,
+        width: 75
     },
     find: {
         backgroundColor: 'white'
