@@ -135,30 +135,25 @@ function SponsorScreen() {
                 <View style = {styles.sponsor}>
                     <Image style = {styles.sponsorImg} source={require('./assets/google.png')} />
                     <Text style = {styles.sponsorText}>Google Grants Recipient</Text>
+                    <Image style = {styles.sponsorImg} source={require('./assets/favorite.png')} />
            
+                </View>
+                <View style = {styles.sponsor}>
                     <Image style = {styles.sponsorImg} source={require('./assets/microsoft.png')} />
-                    <Text style = {styles.sponsorText}>Microsoft</Text>
+                    <Text style = {styles.sponsorText}>Microsoft Non-Profits</Text>
+                    <Image style = {styles.sponsorImg} source={require('./assets/vetted.png')} />
+           
                 </View>
                 <View style = {styles.sponsor}>
                     <Image style = {styles.sponsorImg} source={require('./assets/walmart.png')} />
-                    <Text style = {styles.sponsorText}>Walmart</Text>
+                    <Text style = {styles.sponsorText}>Walmart Community Foundation</Text>
+                    <Image style = {styles.sponsorImg} source={require('./assets/guidestar.png')} />
            
+                </View>
+                <View style = {styles.sponsor}>
                     <Image style = {styles.sponsorImg} source={require('./assets/volunteer.png')} />
                     <Text style = {styles.sponsorText}>Presidential Volunteer Award</Text>
-                </View>
-                <View style = {styles.sponsor}>
-                    <Image style = {styles.sponsorImg} source={require('./assets/favorite.png')} />
-                    <Text style = {styles.sponsorText}>Staff Favorite</Text>
-           
-                    <Image style = {styles.sponsorImg} source={require('./assets/vetted.png')} />
-                    <Text style = {styles.sponsorText}>Vetted</Text>
-                </View>
-                <View style = {styles.sponsor}>
-                    <Image style = {styles.sponsorImg} source={require('./assets/guidestar.png')} />
-                    <Text style = {styles.sponsorText}>Guidestar</Text>
-           
                     <Image style = {styles.sponsorImg} source={require('./assets/invictus.png')} />
-                    <Text style = {styles.sponsorText}>Invictus</Text>
                 </View>
            </View>
            </View>
