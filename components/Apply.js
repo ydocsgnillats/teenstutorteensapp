@@ -35,17 +35,17 @@ export default class ApplyForm extends ValidationComponent {
                 anything: {required: false}
             }))
             {
-            var url = 'https://teens-tutor-teens.herokuapp.com/'
-            const data = {
+            var url = 'https://teens-tutor-teens.herokuapp.com/apply'
+            const data = JSON.stringify({
                 "first": this.state.first,
                 "last": this.state.last,
                 "email": this.state.email,
                 "where": this.state.where,
                 "anything": this.state.anything
-            }
+            })
             fetch(url, {
                 method: 'POST',
-                body: JSON.stringify(data),
+                body: data,
                 headers: {
                     'Content-Type': 'Application/json'
                 }
@@ -54,6 +54,11 @@ export default class ApplyForm extends ValidationComponent {
         } else {
             alert(this.getErrorMessages())
         }
+        this.setState({first: ""})
+        this.setState({last: ""})
+        this.setState({email: ""})
+        this.setState({where: ""})
+        this.setState({anything: ""})
     }
     render() {
         return ( 

@@ -52,7 +52,7 @@ export default class FindForm extends ValidationComponent {
                 anything: {required: false}
             }))
             {
-            var url = 'https://teens-tutor-teens.herokuapp.com/'
+            var url = 'https://teens-tutor-teens.herokuapp.com/find'
             const data = JSON.stringify({
                 "first": this.state.first,
                 "last": this.state.last,
@@ -77,6 +77,17 @@ export default class FindForm extends ValidationComponent {
         } else {
             alert(this.getErrorMessages())
         }
+        this.setState({first: ""})
+        this.setState({last: ""})
+        this.setState({phone: ""})
+        this.setState({subject: ""})
+        this.setState({grade: ""})
+        this.setState({age: ""})
+        this.setState({stateZone: ""})
+        this.setState({email: ""})
+        this.setState({tutor: ""})
+        this.setState({where: ""})
+        this.setState({anything: ""})
     }
     render() {
         return (
