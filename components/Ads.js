@@ -1,20 +1,21 @@
 import {
-  AdMobBanner,
+  AdMobBanner, AdMobInterstitial
 } from 'expo-ads-admob';
 
 import React, { Component } from 'react'
-import { Text } from 'react-native'
+import { Text, View } from 'react-native'
 
-class Ads extends Component {
+export class Ads extends Component {
     render() {
        return (
                <Text>
                 <AdMobBanner
                    bannerSize="fullBanner"
-                   adUnitID="ca-app-pub-3940256099942544/6300978111" // Test ID, Replace with your-admob-unit-id
+                   adUnitID="ca-app-pub-2773378604183047/9245998736" // Test ID, Replace with your-admob-unit-id
                    onDidFailToReceiveAdWithError={this.bannerError} />
                </Text>
        )
 }
 }
-export default Ads;
+
+//interstitial "ca-app-pub-2773378604183047/5446354521"
