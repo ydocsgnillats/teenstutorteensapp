@@ -1,17 +1,17 @@
 import * as React from 'react';
-import { Button, View, Text, Image, StyleSheet, ImageBackground, Linking, TouchableOpacity, TextInput } from 'react-native';
+import { Button, View, Text, Image, StyleSheet, ImageBackground, Linking, TouchableOpacity, TextInput, KeyboardAvoidingView, ScrollView } from 'react-native';
+import { AdMobInterstitial } from'expo-ads-admob';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Ads from './components/Ads.js';
+import { Ads } from './components/Ads.js';
 import Topimg from './components/Top.js';
 import { styles } from './assets/styles';
 import { ApplyForm } from './components/Apply.js';
 import { FindForm } from './components/Find.js';
-import { AdMobInterstitial } from 'expo-ads-admob';
 
-const backgroundImg = {uri: './assets/about.png'}
 
 function HomeScreen({ navigation }) {
+
     return(
            <View style={styles.container}>
            <View style={styles.img}>
@@ -58,22 +58,24 @@ function HomeScreen({ navigation }) {
 function AboutScreen() {
     return(
            <ImageBackground style={styles.container} source={require("./assets/about.png")}>
-           <Text style = {{color:'black', fontSize:20, backgroundColor:'#dce1e899', width: '100%', padding:25, top:50}}>Teens Tutor Teens is built upon the wish for high school peers to succeed in the school system. Education is found to be an important element in life in deciding the role the student will have. In order to ensure the best for students, Teens Tutor Teens has implemented leadership and community service to Teens who need aid achieving academic success.  Teens can receive free tutoring from other teens who have proven to be academically exceptional in their community. However, teens who are economically disadvantaged will be given priority. The mission is to provide other teens with the chance to go and thrive at college and to start off life on the right foot.
-                </Text>
+           <Text style = {{color:'black', fontSize:22, backgroundColor:'#dce1e899', width: '100%', padding:20, top:10}}>Teens Tutor Teens is built upon the wish for high school peers to succeed in the school system. Education is found to be an important element in life in deciding the role the student will have. In order to ensure the best for students, Teens Tutor Teens has implemented leadership and community service to Teens who need aid achieving academic success.  Teens can receive free tutoring from other teens who have proven to be academically exceptional in their community. However, teens who are economically disadvantaged will be given priority. The mission is to provide other teens with the chance to go and thrive at college and to start off life on the right foot.
+           </Text>
            </ImageBackground>
            );
 }
 
 function ApplyScreen() {
     return(
-           <View style={styles.container}>
+           <ScrollView>
+           <KeyboardAvoidingView style = {styles.container} behavior = "padding">
            <View style={styles.img}>
             < Topimg />
            </View>
            <View style={styles.apply}>
             < ApplyForm />
            </View>
-           </View>
+           </KeyboardAvoidingView>
+           </ScrollView>
            );
 }
 
@@ -81,14 +83,16 @@ function FindScreen() {
     // AdMobInterstitial.setAdUnitID("ca-app-pub-3940256099942544/6300978111");
     // AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     return(
-           <View style={styles.container}>
+           <ScrollView>
+           <KeyboardAvoidingView style = {styles.container} behavior = "padding">
            <View style={styles.img}>
             < Topimg />
            </View>
            <View style={styles.find}>
             < FindForm />
            </View>
-           </View>
+           </KeyboardAvoidingView>
+           </ScrollView>
            );
 }
 
@@ -163,7 +167,9 @@ function SponsorScreen() {
 
 const Stack = createStackNavigator();
 
-function App() {
+export default class App extends React.Component {
+
+    render(){
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
@@ -177,6 +183,4 @@ function App() {
         </NavigationContainer>
     );
 }
-
-
-export default App;
+}
