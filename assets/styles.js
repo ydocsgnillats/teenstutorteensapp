@@ -9,9 +9,7 @@ const styles = StyleSheet.create({
     img: {
         width: '100%',
         height: '25%',
-        aspectRatio: 1,
-        right: 100,
-        top: -24
+        aspectRatio: 1
     },
     bgImg: {
         flex:1,
